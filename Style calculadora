@@ -8,14 +8,14 @@
 	color: white;
 	font-size: 1.5em;
   	font-weight: bold;
-  	width: 16.5em;
+  	width: 19.3em;
   	height: 1.8em;
   	text-align: right;
 }
 .pantalla{
 	background-color: #B0D773;
 	text-align: right;
-	width: 15em;
+	width: 18em;
 	height: 1.5em;
 	margin-right: auto;
 	margin-left: auto;
@@ -23,10 +23,11 @@
 	font-size: 1.5em;
 	font-weight: bold;
 	padding-right: .3em;
+	word-wrap: break-word;
 }
 .carcasa{
 	background-color: #1D1F1B; 
-	width: 25em; 
+	width: 29em; 
 	height: 31em; 
 	margin-right: auto;
 	margin-left: auto;
@@ -38,13 +39,14 @@
 	-webkit-box-shadow: 10px 10px 33px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 33px -1px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 33px -1px rgba(0,0,0,0.75);
+	text-align: center;
 }
 button{
 	margin-left: .5em;
 	margin-right: .5em;
 	margin-top: .5em;
 	margin-bottom: .5em;
-	width: 5.25em;
+	width: 6.25em;
 	height: 4.25em;
 	text-align: bottom;
 	border-radius: 51px 51px 51px 51px;
@@ -54,5 +56,6 @@ button{
 	font-family: Arial;
 	font-weight: bold;
 	font-size: .9em;
+
 
 }
