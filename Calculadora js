@@ -25,23 +25,25 @@
     var num2 = 0;
     var resultado = 0;
     var tipo = 0;
+    var digitos = 0 ;
     
 
     var label = document.querySelector("#Texto");
     //Botones Procedimientos
     var botonQ = document.querySelector("#btnQ");
         botonQ.addEventListener("click", function(){
-        alert(`Tarea Elaborada por: Gastelum Rodarte Juan José. La calculadora acepta decimales y numeros negativos.`);
+        alert(`Tarea Elaborada por: Gastelum Rodarte Juan José. La calculadora acepta decimales y numeros negativos. Tiene como maximo 18 digitos.`);
         console.log(`Alerta mostrada`);
         
         });
     var botonReset = document.querySelector("#btnReset");
         botonReset.addEventListener("click", function(){
-        num1="";
         console.log(`${num1} contenido de num1 eliminado`);
-        num2="";
+        num1="";
         console.log(`${num2} contenido de num2 eliminado`);
+        num2="";
         label.textContent="";
+        resultado = 0;
         });
     var botonRaiz = document.querySelector("#btnRaiz");
         botonRaiz.addEventListener("click", function(){
@@ -71,6 +73,10 @@
     var botonResta = document.querySelector("#btnResta");
         botonResta.addEventListener("click", function(){
         console.log(this.id+" Resta");
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
         if (!label.textContent || 0 === label.textContent) {
             label.textContent = `-${label.textContent}`;
         }else{
@@ -101,6 +107,10 @@
     var botonPunto = document.querySelector("#btnPunto");
         botonPunto.addEventListener("click", function(){
         console.log(this.id+" Punto");
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
         if(label.textContent.indexOf('.') != -1){
         alert("Solo puedes tener un .");
         }else{
@@ -115,7 +125,7 @@
         label.textContent= "";
         
         
-        console.log(this.id+" "+ num1 + "tipo " + tipo + num2);
+        console.log(this.id+" "+ num1 + "-tipo-" + tipo + num2);
 
         switch (tipo){
             case 1:
@@ -135,69 +145,175 @@
             console.log(resultado);
             break;
         }
-        if (isNaN(resultado) ) {
-            label.textContent = `SYNTAX ERROR.`
-        }else{
-            label.textContent = resultado;    
-        }
+        error(resultado);
         
     });    
 
+        function error (resultado){
+            if (isNaN(resultado) ) {
+                resultado = 0;
+            return label.textContent = `SYNTAX ERROR.`;
 
+        }else{
+            return label.textContent = resultado;    
+        }
+        }
 
     //Botones Numeros
     var boton0 = document.querySelector("#btnnm0");
         boton0.addEventListener("click", function(){
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
         console.log(this.id+" 0");
         label.textContent = `${label.textContent}0`;
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }
     });
     var boton1 = document.querySelector("#btnnm1");
         boton1.addEventListener("click", function(){
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
         console.log(this.id+" 1");
         label.textContent = `${label.textContent}1`;
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }
     });
 
     var boton2 = document.querySelector("#btnnm2");
         boton2.addEventListener("click", function(){
-            console.log(this.id+" 2");
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
+        console.log(this.id+" 2");
         label.textContent = `${label.textContent}2`;  
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }
     });
     var boton3 = document.querySelector("#btnnm3");
         boton3.addEventListener("click", function(){
-            console.log(this.id+" 3");
-        label.textContent = `${label.textContent}3`;   
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;    
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
+        console.log(this.id+" 3");
+        label.textContent = `${label.textContent}3`; 
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }  
     });
     var boton4 = document.querySelector("#btnnm4");
         boton4.addEventListener("click", function(){
-            console.log(this.id+" 4");
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
+        console.log(this.id+" 4");
         label.textContent = `${label.textContent}4`;  
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }  
     });
     var boton5 = document.querySelector("#btnnm5");
         boton5.addEventListener("click", function(){
-            console.log(this.id+" 5");
-        label.textContent = `${label.textContent}5`;   
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
+        console.log(this.id+" 5");
+        label.textContent = `${label.textContent}5`; 
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }    
     });
     var boton6 = document.querySelector("#btnnm6");
         boton6.addEventListener("click", function(){
-            console.log(this.id+" 6");
-        label.textContent = `${label.textContent}6`;    
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
+        console.log(this.id+" 6");
+        label.textContent = `${label.textContent}6`; 
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }     
     });
     var boton7 = document.querySelector("#btnnm7");
         boton7.addEventListener("click", function(){
-            console.log(this.id+" 7");
-        label.textContent = `${label.textContent}7`;;    
+        if (isNaN(resultado) ){ 
+            label.textContent ="";
+            resultado = 0;
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
+        console.log(this.id+" 7");
+        label.textContent = `${label.textContent}7`;
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }       
     });
     var boton8 = document.querySelector("#btnnm8");
         boton8.addEventListener("click", function(){
-            console.log(this.id+" 8");
-        label.textContent = `${label.textContent}8`;   
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
+        console.log(this.id+" 8");
+        label.textContent = `${label.textContent}8`;  
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }   
     });
     var boton9 = document.querySelector("#btnnm9");
         boton9.addEventListener("click", function(){
-            console.log(this.id+" 9");
-        label.textContent = `${label.textContent}9`;   
+        if (isNaN(resultado) ) {
+            label.textContent ="";
+            resultado = 0;
+        }
+        digitos = label.textContent;
+        if (digitos.length < 18) {
+        console.log(this.id+" 9");
+        label.textContent = `${label.textContent}9`;  
+            }else{
+                 resultado = NaN ;
+                error(resultado);
+            }  
     });
    
+    
+
     ;
 </script>
 </html>
