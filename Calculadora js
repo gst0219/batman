@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="carcasa">
+        <div class="marca">CASIO</div>
+        <br><div class="pantalla"><label class="pantalla" id="Texto"></label></div>
+        
+        <br><button id="btnReset">C</button><button id="btnRaiz">√</button><button id="btnExp">^2</button><button id="btnQ">?</button>
+        <br><button id="btnnm7">7</button><button id="btnnm8">8</button><button id="btnnm9">9</button><button id="btnX">x</button>
+        <br><button id="btnnm4">4</button><button id="btnnm5">5</button><button id="btnnm6">6</button><button id="btnDiv">÷</button>
+        <br><button id="btnnm1">1</button><button id="btnnm2">2</button><button id="btnnm3">3</button><button id="btnResta">-</button>
+        <br><button id="btnnm0">0</button><button id="btnPunto">.</button><button id="btnIgual">=</button><button id="btnSum">+</button>
+    </div>
+    
+    
+</body>
+<script>
+    var num1 = 0;
+    var num2 = 0;
+    var resultado = 0;
+    var tipo = 0;
+    
+
+    var label = document.querySelector("#Texto");
+    //Botones Procedimientos
+    var botonQ = document.querySelector("#btnQ");
+        botonQ.addEventListener("click", function(){
+        alert(`Tarea Elaborada por: Gastelum Rodarte Juan José. La calculadora acepta decimales y numeros negativos.`);
+        console.log(`Alerta mostrada`);
+        
+        });
+    var botonReset = document.querySelector("#btnReset");
+        botonReset.addEventListener("click", function(){
+        num1="";
+        console.log(`${num1} contenido de num1 eliminado`);
+        num2="";
+        console.log(`${num2} contenido de num2 eliminado`);
+        label.textContent="";
+        });
+    var botonRaiz = document.querySelector("#btnRaiz");
+        botonRaiz.addEventListener("click", function(){
+        console.log(this.id+" Raiz cuadrada");
+        num1 = label.textContent;
+            parseFloat(num1); 
+        label.textContent = Math.sqrt(num1);
+        console.log(this.id + label.textContent);
+    });    
+    var botonExp = document.querySelector("#btnExp");
+        botonExp.addEventListener("click", function(){
+        console.log(this.id+" Exponencial");
+        num1 = label.textContent;
+            parseFloat(num1); 
+        label.textContent = Math.pow(num1,2);
+        console.log(this.id + label.textContent);
+    });        
+    var botonX = document.querySelector("#btnX");
+        botonX.addEventListener("click", function(){
+        console.log(this.id+" Multiplicar");
+        num1 = label.textContent;
+            parseFloat(num1); 
+        console.log(this.id+" Guardado "+num1);
+        label.textContent = "";
+        tipo = 1;
+    });
+    var botonResta = document.querySelector("#btnResta");
+        botonResta.addEventListener("click", function(){
+        console.log(this.id+" Resta");
+        if (!label.textContent || 0 === label.textContent) {
+            label.textContent = `-${label.textContent}`;
+        }else{
+        num1 = label.textContent;
+            parseFloat(num1);
+        console.log(this.id+" Guardado "+num1);
+        label.textContent = "";
+        tipo = 2;
+    }});    
+    var botonDiv = document.querySelector("#btnDiv");
+        botonDiv.addEventListener("click", function(){
+        console.log(this.id+" Divison");
+        num1 = label.textContent;
+            parseFloat(num1);
+        console.log(this.id+" Guardado "+num1);
+        label.textContent = "";
+        tipo = 3;
+    });       
+    var botonSum = document.querySelector("#btnSum");
+        botonSum.addEventListener("click", function(){
+        console.log(this.id+" Suma");
+        num1 = label.textContent;
+            parseFloat(num1);
+        console.log(this.id+" Guardado "+num1);
+        label.textContent = "";
+        tipo = 4;
+    });   
+    var botonPunto = document.querySelector("#btnPunto");
+        botonPunto.addEventListener("click", function(){
+        console.log(this.id+" Punto");
+        if(label.textContent.indexOf('.') != -1){
+        alert("Solo puedes tener un .");
+        }else{
+            label.textContent = `${label.textContent}.`;
+        }
+    });    
+    var botonIgual = document.querySelector("#btnIgual");
+        botonIgual.addEventListener("click", function(){
+        console.log(this.id+" Igual ");
+        num2 = label.textContent;
+            parseFloat(num2);
+        label.textContent= "";
+        
+        
+        console.log(this.id+" "+ num1 + "tipo " + tipo + num2);
+
+        switch (tipo){
+            case 1:
+            resultado = num1*num2;
+            console.log(resultado);
+            break;
+            case 2:
+            resultado = num1-num2;
+            console.log(resultado);
+            break;
+            case 3:
+            resultado = num1/num2;
+            console.log(resultado);
+            break;
+            case 4:
+            resultado = parseFloat(num1)+parseFloat(num2); //Aqui tuve que volver a convertir ya que si no me los concatenava.
+            console.log(resultado);
+            break;
+        }
+        if (isNaN(resultado) ) {
+            label.textContent = `SYNTAX ERROR.`
+        }else{
+            label.textContent = resultado;    
+        }
+        
+    });    
+
+
+
+    //Botones Numeros
+    var boton0 = document.querySelector("#btnnm0");
+        boton0.addEventListener("click", function(){
+        console.log(this.id+" 0");
+        label.textContent = `${label.textContent}0`;
+    });
+    var boton1 = document.querySelector("#btnnm1");
+        boton1.addEventListener("click", function(){
+        console.log(this.id+" 1");
+        label.textContent = `${label.textContent}1`;
+    });
+
+    var boton2 = document.querySelector("#btnnm2");
+        boton2.addEventListener("click", function(){
+            console.log(this.id+" 2");
+        label.textContent = `${label.textContent}2`;  
+    });
+    var boton3 = document.querySelector("#btnnm3");
+        boton3.addEventListener("click", function(){
+            console.log(this.id+" 3");
+        label.textContent = `${label.textContent}3`;   
+    });
+    var boton4 = document.querySelector("#btnnm4");
+        boton4.addEventListener("click", function(){
+            console.log(this.id+" 4");
+        label.textContent = `${label.textContent}4`;  
+    });
+    var boton5 = document.querySelector("#btnnm5");
+        boton5.addEventListener("click", function(){
+            console.log(this.id+" 5");
+        label.textContent = `${label.textContent}5`;   
+    });
+    var boton6 = document.querySelector("#btnnm6");
+        boton6.addEventListener("click", function(){
+            console.log(this.id+" 6");
+        label.textContent = `${label.textContent}6`;    
+    });
+    var boton7 = document.querySelector("#btnnm7");
+        boton7.addEventListener("click", function(){
+            console.log(this.id+" 7");
+        label.textContent = `${label.textContent}7`;;    
+    });
+    var boton8 = document.querySelector("#btnnm8");
+        boton8.addEventListener("click", function(){
+            console.log(this.id+" 8");
+        label.textContent = `${label.textContent}8`;   
+    });
+    var boton9 = document.querySelector("#btnnm9");
+        boton9.addEventListener("click", function(){
+            console.log(this.id+" 9");
+        label.textContent = `${label.textContent}9`;   
+    });
+   
+    ;
+</script>
+</html>
