@@ -1,0 +1,58 @@
+@font-face{
+	font-family: letra;
+	src: url(DS-DIGII.TTF);
+}
+.marca{
+	background-color: #080807;
+	font-family: "Segoe UI";
+	color: white;
+	font-size: 1.5em;
+  	font-weight: bold;
+  	width: 16.5em;
+  	height: 1.8em;
+  	text-align: right;
+}
+.pantalla{
+	background-color: #B0D773;
+	text-align: right;
+	width: 15em;
+	height: 1.5em;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: letra;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-right: .3em;
+}
+.carcasa{
+	background-color: #1D1F1B; 
+	width: 25em; 
+	height: 31em; 
+	margin-right: auto;
+	margin-left: auto;
+	position:relative;
+	border-radius: 0px 0px 24px 24px;
+	-moz-border-radius: 0px 0px 24px 24px;
+	-webkit-border-radius: 0px 0px 24px 24px;
+	border: 0px solid #000000;
+	-webkit-box-shadow: 10px 10px 33px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 33px -1px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 33px -1px rgba(0,0,0,0.75);
+}
+button{
+	margin-left: .5em;
+	margin-right: .5em;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	width: 5.25em;
+	height: 4.25em;
+	text-align: bottom;
+	border-radius: 51px 51px 51px 51px;
+	-moz-border-radius: 51px 51px 51px 51px;
+	-webkit-border-radius: 51px 51px 51px 51px;
+	border: 3px solid #000000;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: .9em;
+
+}
