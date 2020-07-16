@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<div class="">
+		<nav class="navbar navbar-dark bg-dark">
+  		<p style="color:white">CURRICULUM VITAE</p>
+  		<!-- Navbar content -->
+		</nav>
+		
+	</div>
+	<div class="container-fluid d-sm-none">
+		<div class="row">
+				
+			<img allign="center" src="IMG_2720.jpg">
+			
+		</div>
+		<div class="container-fluid rojo">
+			<h2>Juan José Gastelum Rodarte</h2>
+					    	<p>Ing.Sistemas Computacionales</p>
+					    	<h3>Contacto</h3>
+					    	<i class="fa fa-envelope" aria-hidden="true"></i><span> gastj@gmail.com</span>
+					    	<br><i class="fa fa-phone" aria-hidden="true"></i><span> 52-6674516405</span>
+					    	<br><i class="fa fa-github" aria-hidden="true"></i><span> j.gastelum19 </span>
+					    	<br><i class="fa fa-twitter-square" aria-hidden="true"></i><span> @NoSoyJJ</span>
+							    	
+		</div>
+		<div id="accordion">
+			  <div class="card">
+			    <div class="card-header cuadro1" id="headingOne">
+			      <h5 class="mb-0">
+			        <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			          Perfil
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+			      <div class="card-body">
+			        Recien egresado de la carrera, fuertemente interesado en proyectos que requieran pensamiento analitico.
+					    	Responsable para el diseño y desarrollo inovador web, basado en funcionamiento que le favorezcan al usuario. Siempre dispuesto para aprender nuevas habilidades que contribuyan al desarrollo de la insdutria.
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header  cuadro1" id="headingTwo">
+			      <h5 class="mb-0">
+			        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			          Experincia
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+			      <div class="card-body">
+			        <ul class="fa-ul">
+						<li><i class="fa-li fa fa-check-square"></i>"Grimmway Cal Organics Farms"          2017-2018</li>
+						<li><i class="fa-li fa fa-check-square"></i>"NV Concrete & Construction"           2018-2018</li>
+								  
+						</ul>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="card">
+			    <div class="card-header  cuadro1" id="headingThree">
+			      <h5 class="mb-0">
+			        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			          Educación
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			      <div class="card-body">
+			        <i class="fa fa-university" aria-hidden="true"></i><span> Tecnologico Nacional de Mexico Campus Culiacan</span>
+					<br><i class="fa fa-university" aria-hidden="true"></i><span> Centro de Estudios Tecnologicos Industriales y de Servicios 107</span>
+					<br><i class="fa fa-university" aria-hidden="true"></i><span> Participante Olimpiada Mexicana de Informática Sinaloa 2016</span>
+					<br><i class="fa fa-university" aria-hidden="true"></i><span> Curso Emprende Joven 2017</span>
+			      </div>
+			    </div>
+  			</div>
+  			<div class="card">
+			    <div class="card-header cuadro1" id="headingFive">
+			      <h5 class="mb-0">
+			        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+			          Idioma
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+			      <div class="card-body">
+			        <ul class="fa-ul">
+						<li><i class="fa-li fa fa-check-square"></i> Ingles Conversacional</li>
+					</ul>
+			      </div>
+			    </div>
+			  </div>
+  				<div class="card">
+			    <div class="card-header  cuadro1" id="headingFourt">
+			      <h5 class="mb-0">
+			        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFourt" aria-expanded="false" aria-controls="collapseFourt">
+			          Intereses
+			        </button>
+			      </h5>
+			    </div>
+			    <div id="collapseFourt" class="collapse" aria-labelledby="headingFourt" data-parent="#accordion">
+			      <div class="card-body">
+			        <div class="col-sm-4 col-md-2 col-lg-2 azulIconos"><br><i class="fa fa-database fa-2x" aria-hidden="true"></i>
+						<span> Data base</span>
+					</div>
+					<div class="col-sm-4 col-md-2 col-lg-2 azulIconos"><br><i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+						<span> Web Designer</span>
+					</div>
+					<div class="col-sm-4 col-md-2 col-lg-2 azulIconos"><br><i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+						<span> Developer</span>
+					</div>
+			      </div>
+			    </div>
+
+			    
+			   <div class="card">
+			    <div class="card-header cuadro1" id="headingSix">
+			      <h5 class="mb-0">
+			        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+			          Habilidades
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+			      <div class="card-body">
+			        <div class="col-md-12 col-md-12 azulHabil">
+							<br><div class="progress">
+								  	<div class="progress-bar" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    Analisis
+								  	</div>
+								</div>
+							<br><div class="progress">
+								    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    Diseño
+								  	</div>
+								</div>
+							<br><div class="progress">
+								  	<div class="progress-bar" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    Desarrollo
+								  	</div>
+								</div>
+							<br><div class="progress">
+								  	<div class="progress-bar" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    Pruebas
+								  	</div>
+								</div>
+							</div>
+			      </div>
+			    </div>
+
+			  </div>
+
+			  <div class="card">
+			    <div class="card-header cuadro1" id="headingSeven">
+			      <h5 class="mb-0">
+			        <button class="btn" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+			          Otros Datos
+			        </button>
+			      </h5>
+			    </div>
+
+			    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+			      <div class="card-body">
+			        <ul class="fa-ul">
+								  	<li><i class="fa fa-id-card-o" aria-hidden="true"></i> Licencia de conducir tipo A</li>
+								  	<li><i class="fa fa-globe" aria-hidden="true"></i> Disponibilidad horaria y geografica</li>
+								  
+									</ul>
+			      </div>
+			    </div>
+			  </div>
+
+
+
+
+
+
+
+
+
+
+
+  			</div>
+		</div>
+	</div>
+	<div class="container-fluid d-none  d-sm-block">
+
+				<div class="row d-lg-*">
+					  
+					</div>
+					<div class="row rojo ">
+					    <div class="col-md-3 col-sm-3 rojo ">
+					    	<img allign="center" src="IMG_2720.jpg">
+					    	<h2>Juan José Gastelum Rodarte</h2>
+					    	<p>Ing.Sistemas Computacionales</p>
+					    	<h3>Contacto</h3>
+					    	<i class="fa fa-envelope" aria-hidden="true"></i><span> gastj@gmail.com</span>
+					    	<br><i class="fa fa-phone" aria-hidden="true"></i><span> 52-6674516405</span>
+					    	<br><i class="fa fa-github" aria-hidden="true"></i><span> j.gastelum19 </span>
+					    	<br><i class="fa fa-twitter-square" aria-hidden="true"></i><span> @NoSoyJJ</span>
+					    	
+					    	<div class="d-none d-md-none d-lg-block">
+					    	<br><h3>Perfil</h3>
+					    	<p>Recien egresado de la carrera, fuertemente interesado en proyectos que requieran pensamiento analitico.
+					    	Responsable para el diseño y desarrollo inovador web, basado en funcionamiento que le favorezcan al usuario. Siempre dispuesto para aprender nuevas habilidades que contribuyan al desarrollo de la insdutria.</p>
+					    	</div>
+					    </div>
+
+					    <div class="col-md-9 col-sm-9 col-xs-12">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 d-block d-md-block d-lg-none rosa"><h2>Perfil</h2> 
+
+								</div>
+								<div class="col-sm-12 col-md-12 col-lg-12 d-block d-md-block d-lg-none azulEduConte"> 
+									<p>Recien egresado de la carrera, fuertemente interesado en proyectos que requieran pensamiento analitico.
+					    			Responsable para el diseño y desarrollo inovador web, basado en funcionamiento que le favorezcan al usuario. Siempre dispuesto para aprender nuevas habilidades que contribuyan al desarrollo de la insdutria. </p>
+								</div>
+								<div class="col-md-12 col-sm-12 rosa"><h2>Experiencia</h2> 
+
+								</div>
+								<div class="col-sm-12 col-md-12 col-lg-12 naranja"> 
+									<ul class="fa-ul">
+								  	<li><i class="fa-li fa fa-check-square"></i>"Grimmway Cal Organics Farms"          2017-2018</li>
+								  	<li><i class="fa-li fa fa-check-square"></i>"NV Concrete & Construction"           2018-2018</li>
+								  
+									</ul>
+								</div>
+								
+								<div class="col-sm-12 col-md-12 col-lg-12 azulEdu"> <h2>Educación</h2></div>
+								
+								<div class="col-md-12 col-md-6 azulEduConte">
+									<i class="fa fa-university" aria-hidden="true"></i><span> Tecnologico Nacional de Mexico Campus Culiacan</span>
+									<br><i class="fa fa-university" aria-hidden="true"></i><span> Centro de Estudios Tecnologicos Industriales y de Servicios 107</span>
+									<br><i class="fa fa-university" aria-hidden="true"></i><span> Participante Olimpiada Mexicana de Informática Sinaloa 2016</span>
+									<br><i class="fa fa-university" aria-hidden="true"></i><span> Curso Emprende Joven 2017</span>
+								</div>
+								
+								
+
+								<div class="col-md-6 col-lg-6 d-none d-sm-none d-md-block azulInter"> <h2>Intereses</h2></div>
+								<div class="col-md-6 col-lg-6 azulInter"><h2>Idiomas</h2></div>
+								<div class="col-sm-12 d-block d-sm-block d-md-none azulIconos">
+									<ul class="fa-ul">
+									<li><i class="fa-li fa fa-check-square"></i> Ingles Conversacional</li>
+									</ul>
+								</div>
+
+								
+								<div class="col-sm-12 d-block d-sm-block d-md-none azulInter"> <h2>Intereses</h2></div>
+								
+								
+									<div class="col-sm-4 col-md-2 col-lg-2 azulIconos"><br><i class="fa fa-database fa-2x" aria-hidden="true"></i>
+										<span> Data base</span>
+									</div>
+									<div class="col-sm-4 col-md-2 col-lg-2 azulIconos"><br><i class="fa fa-html5 fa-2x" aria-hidden="true"></i>
+										<span> Web Designer</span>
+									</div>
+									<div class="col-sm-4 col-md-2 col-lg-2 azulIconos"><br><i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
+										<span> Developer</span>
+									</div>
+								
+								<div class="col-md-6 col-lg-6 d-none d-sm-none d-md-block azulIconos">
+									<ul class="fa-ul">
+									<li><i class="fa-li fa fa-check-square"></i> Ingles Conversacional</li>
+									</ul>
+								</div>
+								
+								
+								<div class="azulEdu d-none d-md-none d-lg-block col-lg-4 "></div>
+								<div class=" azulEdu col-md-12 col-lg-4 "><h2>Habilidades</h2></div>
+								<div class=" azulEdu d-none d-md-none d-lg-block col-lg-4"></div>
+								<div class="col-md-12 col-md-12 azulHabil">
+									<br><div class="progress">
+								  		<div class="progress-bar" role="progressbar" aria-valuenow="75"
+								  		aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    	Analisis
+								  		</div>
+									</div>
+									<br><div class="progress">
+								  		<div class="progress-bar" role="progressbar" aria-valuenow="70"
+								  		aria-valuemin="0" aria-valuemax="100" style="width:70%">
+								    	Diseño
+								  		</div>
+									</div>
+									<br><div class="progress">
+								  		<div class="progress-bar" role="progressbar" aria-valuenow="75"
+								  		aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    	Desarrollo
+								  		</div>
+									</div>
+									<br><div class="progress">
+								  		<div class="progress-bar" role="progressbar" aria-valuenow="90"
+								  		aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    	Pruebas
+								  		</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-12 col-sm-12 rosa"><h2>Otros datos</h2></div> 
+								
+								</div>
+								<div class="col-sm-12 col-md-12 col-lg-12 naranjaRef"> 
+									<ul class="fa-ul">
+								  	<li><i class="fa fa-id-card-o" aria-hidden="true"></i> Licencia de conducir tipo A</li>
+								  	<li><i class="fa fa-globe" aria-hidden="true"></i> Disponibilidad horaria y geografica</li>
+								  
+									</ul>
+								</div>
+								 
+
+								
+
+
+								
+							
+					    </div>
+					</div>
+					<div class="row">
+					  <div class="col-lg-12 verde"></div>
+					</div>
+	</div>
+				
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
